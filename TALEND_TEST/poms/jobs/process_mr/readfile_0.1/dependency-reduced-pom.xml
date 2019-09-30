@@ -33,6 +33,7 @@
                   <exclude>commons-codec:commons-codec</exclude>
                   <exclude>org.scala-lang:scala-library</exclude>
                   <exclude>org.apache.avro:avro</exclude>
+                  <exclude>org.apache.avro:avro-mapred</exclude>
                   <exclude>commons-lang:commons-lang</exclude>
                   <exclude>org.talend.libraries:cxf-rt-core-2.7.7</exclude>
                   <exclude>org.talend.libraries:spark-mllib-local_2.11-2.1.0.2.6.0.2-76</exclude>
@@ -47,7 +48,6 @@
                   <exclude>org.apache.commons:commons-lang3</exclude>
                   <exclude>org.talend.libraries:antlr-runtime-3.5.2</exclude>
                   <exclude>com.esotericsoftware:kryo-shaded</exclude>
-                  <exclude>org.talend.libraries:spark-hive_2.11-2.1.0.2.6.0.2-76</exclude>
                   <exclude>org.talend.libraries:hadoop-mapreduce-client-app-2.7.3.2.6.0.2-76</exclude>
                   <exclude>org.scala-lang:scala-reflect</exclude>
                   <exclude>org.talend.libraries:cxf-rt-transports-http-2.7.7</exclude>
@@ -256,6 +256,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>org.apache.avro</groupId>
+      <artifactId>avro-mapred</artifactId>
+      <version>1.8.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-storage</artifactId>
       <version>5.0.0</version>
@@ -438,12 +444,6 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>spark-graphx_2.11-2.1.0.2.6.0.2-76</artifactId>
-      <version>6.0.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>spark-hive_2.11-2.1.0.2.6.0.2-76</artifactId>
       <version>6.0.0</version>
       <scope>compile</scope>
     </dependency>
