@@ -8,8 +8,8 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example.talend_test.job</groupId>
-  <artifactId>Stage_to_Trace_Load</artifactId>
-  <name>TALEND_TEST Stage_to_Trace_Load-0.1.0 (0.1,Big Data Batch)</name>
+  <artifactId>Stage_to_Trace</artifactId>
+  <name>TALEND_TEST Stage_to_Trace-0.1.0 (0.1,Big Data Batch)</name>
   <version>0.1.0</version>
   <build>
     <finalName>${talend.job.finalName}</finalName>
@@ -32,7 +32,6 @@
                   <exclude>commons-codec:commons-codec</exclude>
                   <exclude>org.scala-lang:scala-library</exclude>
                   <exclude>org.apache.avro:avro</exclude>
-                  <exclude>org.apache.avro:avro-mapred</exclude>
                   <exclude>commons-lang:commons-lang</exclude>
                   <exclude>org.talend.libraries:cxf-rt-core-2.7.7</exclude>
                   <exclude>org.talend.libraries:spark-mllib-local_2.11-2.1.0.2.6.0.2-76</exclude>
@@ -253,12 +252,6 @@
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
       <version>1.7.7</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.avro</groupId>
-      <artifactId>avro-mapred</artifactId>
-      <version>1.8.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -498,12 +491,12 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>talend_test</talend.project.name.lowercase>
-    <talend.job.path>talend_test/stage_to_trace_load_0_1</talend.job.path>
+    <talend.job.path>talend_test/stage_to_trace_0_1</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>TALEND_TEST</talend.project.name>
     <talend.product.version>7.1.1.20190228_0243-patch</talend.product.version>
-    <talend.job.finalName>stage_to_trace_load_0_1</talend.job.finalName>
+    <talend.job.finalName>stage_to_trace_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.talend_test.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.talend_test.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -512,8 +505,8 @@
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>Stage_to_Trace_Load</talend.job.name>
-    <talend.job.id>_m4cm4OXDEemcXNEwFfkemQ</talend.job.id>
+    <talend.job.name>Stage_to_Trace</talend.job.name>
+    <talend.job.id>_nSRp4OXIEemcXNEwFfkemQ</talend.job.id>
     <talend.project.id>0</talend.project.id>
     <talend.job.folder>mar_dev/</talend.job.folder>
     <talend.job.framework>Spark</talend.job.framework>
